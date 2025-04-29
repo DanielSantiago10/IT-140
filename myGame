@@ -1,0 +1,80 @@
+print('\n'
+      'Welcome to the game! \n'
+      'Syrus the Hero Text Adventure Game!!\n'
+      'Collect 6 items to win the game, or get grounded by M.O.M.\n'
+      'Move commands: South,North,East,West\n'
+      'To Add to inventory: get \'Item name\'\n'
+      '\n')
+
+
+rooms = {
+    'Porch': {'East': 'Mud Room'},
+    'Mud Room': {'North': 'Bathroom', 'West': 'Porch', 'South': 'Dining Room', 'East': 'Living Room', },
+    'Dining Room': {'North': 'Mud Room', 'East': 'Kitchen', },
+    'Kitchen': {'West': 'Dining Room', 'Item': 'sweater'},
+    'Bathroom': {'South': 'Mud Room', 'East': 'Brothers Room', },
+    'Brothers Room': {'West': 'Bathroom', 'Item': 'shirt'},
+    'Living Room': {'North': 'Basement', 'West': 'Mud Room', },
+    'Basement': {'South': 'Living Room', 'Item': 'M.O.M.'},
+}
+
+items = {
+    'Mud Room': 'underwear',
+    'Dining Room': 'right sock',
+    'Kitchen': 'sweater',
+    'Bathroom': 'left sock',
+    'Brothers Room': 'shirt',
+    'Living Room': 'under shirt',
+    'Basement': 'M.O.M.',
+}
+
+state = 'Porch'
+inventory = []
+
+
+def get_new_state(state, directions):  # start with what state you are in
+    new_state = state  # everytime the state of the char updates
+    for i in rooms:
+        if i == state:
+            if directions in rooms[i]:
+                new_state = rooms[i][directions]
+
+    return new_state  # return
+
+
+while 1:
+    print('You are in ', state)  # lets the char know what state they are in
+    if state == 'Basement':
+        print('Argueing with M.O.M.', end='')
+        for i in range(50):
+            for j in range(1000000):
+                pass
+            print(".", end='', flush=True)
+        print()
+        if len(inventory) == 6:
+            print('You won M.O.M over!! now Syrus can save the World!!')
+        else:
+            print('Sorry, you lost - You are grounded')
+        break
+
+    print('Available to you in this room is', items[state])
+    print('You currently have', inventory)
+    direction = input('Enter Which direction you want to go East, West, North, South or enter exit: ')
+    if items[state] in inventory:
+        pass
+    else:
+        inventory.append(items[state])
+        continue
+    direction = direction.capitalize()  # gives the char direction on how to play
+    if direction == 'Exit':
+        print('Thank you for playing!')
+        exit(0)
+    if direction == 'East' or direction == 'West' or direction == 'North' or direction == 'South':
+        new_state = get_new_state(state, direction)
+        if new_state == state:  # if
+            print('The room has wall in that direction pick another direction')
+        else:
+            state = new_state
+    else:
+        print('Invalid command!')
+
