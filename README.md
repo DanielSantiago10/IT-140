@@ -10,7 +10,7 @@
 
 ## Phase 2: Logic and Flow Design (Pseudocode)
 
-**Movement Logic:** I used a flowchart to map how the program should handle user input. I decided to program must validate whether a direction is "Valid"(has a connecting room) before moving the player.
+**Movement Logic:** I used a flowchart to map how the program should handle user input. I decided to program must validate whether a direction is "Valid"(has a connecting room) before moving the player.[Room Logic](Images/Room Logic.png)
 
 **Inventory Logic:** Designed a system to check if a room contains an item and how the player interacts with it.  Thi ensured the player couldn't reach the "Win State" without oollecting all six items first.
 
