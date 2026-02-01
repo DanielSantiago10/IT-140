@@ -12,6 +12,8 @@
 
 ![Mapping](https://github.com/DanielSantiago10/M.O.M.-Text-Adventure-RPG/blob/main/Images/Storyboard%20Map.png)
 
+---
+
 ## Phase 2: Logic and Flow Design
 
 **Movement Logic:** I used a flowchart to map how the program should handle user input. I decided to program must validate whether a direction is "Valid"(has a connecting room) before moving the player. 
@@ -21,6 +23,8 @@
 **Inventory Logic:** Designed a system to check if a room contains an item and how the player interacts with it.  Thi ensured the player couldn't reach the "Win State" without oollecting all six items first.
 
 ![Inventory Logic](https://github.com/DanielSantiago10/M.O.M.-Text-Adventure-RPG/blob/main/Images/Inventory%20Logic.png)
+
+---
 
 ## Phase 3: Technical Implementation (The Code)
 
@@ -82,6 +86,7 @@ while 1:
         break
 ```
 
+---
 
 ## Phase 4: IDE Refinement
 
@@ -90,6 +95,8 @@ while 1:
 **Refactoring:** Used PyCharm's color-coding to identify "dull grey" unused variables and distiguish between strings and functions.
 
 **Refactoring:** Used the color-coding system to visually organize the code, making it easier to distinguish between built-in functions, strings, and variables.
+
+---
 
 ## Lessons Learned:
 Through this project, I learned that a successful game depends as much on robust logic planning—like my movement flowcharts—as it does on the actual code. Using the PyCharm IDE was a turning point, as its real-time error highlighting and color-coding taught me how to write cleaner, more efficient Python script. Ultimately, this experience showed me how to translate a creative story into a functional program by organizing complex data into manageable dictionaries.
