@@ -4,13 +4,13 @@
 
 **The Narrative:** Definedd the hero Syrus, and the antagonist, M.O.M. (Short for Maddened Opinionated Mephistophelian)
 
-![Desc](https://github.com/DanielSantiago10/M.O.M.-Text-Adventure-RPG/blob/main/Images/Story%20Board%20Desc.png)
+![Description](https://github.com/DanielSantiago10/M.O.M.-Text-Adventure-RPG/blob/main/Images/Storyboard%20Description.png)
 
 **World Building:** Mapped out the house as a dungeon. I designed a layout where the "Porch" is the starting zone and the "Basement" is the final boss room.
 
 **Mapping:** Created a visual flow of the house to ensure everyroom was interconnected and accessible via cardinal directions (North, South, East, West) 
 
-![Mapping](https://github.com/DanielSantiago10/M.O.M.-Text-Adventure-RPG/blob/main/Images/Storyboard%20Map.png)
+![Mapping](https://github.com/DanielSantiago10/M.O.M.-Text-Adventure-RPG/blob/main/Images/Story%20Board%20Map.png)
 
 ---
 
